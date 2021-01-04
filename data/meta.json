@@ -1,0 +1,16 @@
+{
+	"title": "How Bad Is Your Spotify?",
+	"description": "Our sophisticated A.I. judges your awful taste in music.",
+	"site": "https://pudding.cool",
+	"siteName": "The Pudding",
+	"url": "https://pudding.cool/2020/12/judge-my-spotify/",
+	"keywords": "music,spotify,data",
+	"imgFacebook": "https://pudding.cool/2020/12/judge-my-spotify/assets/social/social-facebook.jpg",
+	"imgTwitter": "https://pudding.cool/2020/12/judge-my-spotify/assets/social/social-twitter.jpg",
+	"author": {
+		"name": "Matt Daniels",
+		"url": "https://pudding.cool/author/matt-daniels",
+		"twitterHandle": "@matthew_daniels"
+	},
+	"lorem": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis neque sit amet sollicitudin vehicula. Maecenas fringilla mi non lacus mattis elementum. Curabitur dignissim faucibus justo."
+}

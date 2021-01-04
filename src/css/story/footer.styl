@@ -1,0 +1,111 @@
+footer.pudding-footer
+	padding 3rem 1rem
+	font-family $atlas
+	margin-top 3rem
+
+	.footer-recirc
+		max-width 65rem
+		margin 0 auto
+		&__articles
+			display flex
+			flex-wrap wrap
+			justify-content space-between
+			font-family $atlas
+
+		&__article
+			display block
+			width 100%
+			border none
+			margin-bottom 2rem
+			+mq('bp-5')
+				width calc(25% - 1.5rem)
+				margin-right 1.5rem
+				&:last-of-type
+					margin-right 0
+
+		.article__headline
+			font-family $atlas
+			set-type-size(large, false)
+			line-height 1
+			font-weight 700
+			padding-left 0.5rem
+			margin-top 1rem
+			// padding-top 1rem
+
+	.footer-company
+		margin 0 auto
+		margin-top 3rem
+		max-width 65rem
+		display flex
+		flex-direction column
+		font-family $atlas
+		+mq('bp-5')
+			flex-direction row
+
+		&__cta
+			order 1
+			margin 2rem 0 0 0
+			width 100%
+			+mq('bp-5')
+				width 22rem
+				margin 0 0 0 2rem
+
+		&__cta-list
+			display flex
+			flex-wrap wrap
+			flex-direction row
+			height 12rem
+			+mq('bp-5')
+				flex-direction row
+
+			li
+				display flex
+				margin-bottom 1rem
+				align-items center
+				font-family $atlas
+				+mq('bp-5')
+					padding-left 1rem
+
+				a
+					display flex
+					border none
+					font-family $atlas
+
+				p
+					font-family $atlas
+					margin 0
+					padding-left 0.5rem
+					padding-top 0.1rem
+					font-size .8rem
+					line-height 1
+					color $gray
+					+mq('bp-4')
+						font-size 1rem
+
+				svg
+					fill $gray
+					stroke none
+					vertical-align middle
+					circle, polyline, line
+						fill none
+						stroke $gray
+				.feather-mail path, .feather-lock path, .feather-rss path
+						stroke $gray
+						fill none
+
+		&__about
+			order 0
+			width 100%
+			color $gray
+			display flex
+			flex-direction column
+			+mq('bp-5')
+				width calc(100% - 24rem)
+
+			p
+				margin 0
+				set-type-size(root, false)
+				line-height 1.4
+			svg
+				width 12rem
+				margin-bottom 0.5rem

@@ -1,0 +1,936 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
+html, body, main
+  height 100%
+.intro
+  height 100%
+
+.ti-cursor
+    color #aaa !important
+    margin-left 0px !important
+
+/* CUSTOM STORY STYLE */
+#loader
+    width 50px
+    fill white
+    margin-left -4px
+
+
+
+.fantano
+    width 80px
+    margin 0 auto
+    margin 0 30px
+.pitchfork
+    width 150px
+    margin 0 30px
+.pigeons
+    width 122px
+    margin 0 30px
+
+.stereo
+    width 127px
+    margin 0 30px
+.tiny
+    width 97px
+    margin 0 30px
+.vegan
+    width 159px
+    margin 0 30px
+.thirty
+    width 108px
+    margin 0 30px
+
+.ascii-art
+    font-family monospace
+    height 0px
+    overflow hidden
+    display none
+    margin 0 auto
+    margin-top 1rem
+    width calc(100% - 40px)
+    max-width 500px
+    margin-bottom 10rem
+    pre
+        font-family monospace
+        white-space pre
+        font-size calc(min(3.3vw,19px))
+
+
+
+.score-slide
+  z-index 100000
+  position relative
+  .score-chat
+      width calc(100% - 50px)
+      max-width 600px
+      text-align left
+      margin 0 auto
+      //padding-top calc(4rem + 150px)
+      //padding-bottom 10rem
+      .score-chat-special
+          position relative
+          .special-score
+              font-size 3rem
+              font-weight 900
+              line-height 1.2
+              position relative
+              top 0
+              left 0
+              margin 0
+              width 100%
+              margin-bottom 2rem
+              @media (max-width 450px)
+                font-size 2rem
+      p,a,li
+          font-size 1.1rem
+          margin-top .6rem
+          font-family 'Inconsolata', monospace
+          font-weight 500
+      .report
+          form
+            display flex
+            margin-top 1rem
+            margin-bottom 1rem
+          input
+            background rgba(255,255,255,0.53)
+            border 1px solid rgba(0,0,0,0.25)
+            border-radius 3px
+            margin-right 5px
+            padding-left 0.5rem
+            font-family 'Atlas Grotesk Web'
+            -webkit-appearance none
+            -moz-appearance none
+            font-size 14px
+
+          .btn
+            font-family $atlas
+            background #5977e1
+            border-radius 3px
+            border none
+            box-shadow 0 1px 2px rgba(15,15,15,0.15)
+            border 1px solid #4365be
+            padding 0.5rem 1rem
+            color white
+
+          button
+            font-family $atlas
+            background #e16259
+            border-radius 3px
+            border none
+            box-shadow 0 2px 2px rgba(225,98,89,0.36)
+            border 1px solid #be5643
+            padding 0.5rem 1rem
+            color white
+            margin-top 1rem
+            margin-bottom 1rem
+          p,li
+              font-family 'Inconsolata', monospace
+              //font-size 1rem
+              text-align left
+              padding 0
+              font-weight 400
+          .bold
+              font-weight 600
+          .extra-score
+              padding-left 2rem
+          .top-margin
+              margin-top 2rem
+          ul
+              li
+                  list-style-type disc
+                  margin-left 2rem
+                  line-height 1.6
+                  margin-top .4rem
+
+
+.ai-building-slide
+    display flex
+    flex-direction column
+    justify-content flex-end
+    .progress-bar
+        .bar
+            padding-left 15px
+
+
+    .ai-building-slide-title
+        font-family 'Inconsolata', monospace
+        font-weight 500
+        text-align left
+        width calc(100% - 50px)
+        max-width 450px
+        margin 0 auto
+        p
+            font-size 1.1rem
+            margin-top 15px
+            line-height 1.2
+            font-family 'Inconsolata', monospace
+            font-weight 500
+        // &:after
+        //     content '█'
+        //     color #aaa
+
+
+
+p, a
+    margin 0
+    font-weight 300
+.score-section
+    //position absolute
+    //top 0
+    //right 0
+    //left 0
+    //transform translate(0,-100%)
+    display flex
+    justify-content center
+    //border-bottom 1px solid #aaa
+    font-family $atlas
+    padding .3rem .8rem
+    position absolute
+    width 100%
+    background linear-gradient(180deg, #f7fdff 20px, rgba(255,255,255,0) 100%)
+    bottom 154px
+    padding 0
+    background none
+    z-index 1000
+    visibility hidden
+
+    .score-wrapper
+        display flex
+        justify-content center
+        padding .3rem .8rem
+    .score-text
+        margin-left 0
+        span
+            font-weight 400
+    .score-num
+        margin-left 5px
+
+    p
+        text-align center
+        font-size .8rem
+        color rgba(29,55,64,.72)
+        font-family $atlas
+.chat-section
+    height calc(100% - 150px)
+    overflow scroll
+    width 100%
+    min-height 350px
+    margin 0 auto
+    height 100%
+    .chat-wrapper
+        width calc(100% - 40px)
+        max-width 500px
+        margin 0 auto
+        padding-bottom 250px
+        .first-row
+            margin-top 5rem
+
+    .play-row
+        background #e9e9e9
+        padding 5px
+        border-radius 15px
+        display inline-flex
+        .time-stamp
+            font-size 12px
+            align-self center
+            font-family $sans
+            margin 0
+            padding 0
+            padding-right 5px
+        .waveform
+            height 25px
+            svg
+                width 81px
+                height 25px
+        .play-button
+            stroke-width 1px
+            height 25px
+            cursor pointer
+            svg
+                width 25px
+                height 100%
+                position relative
+                circle, line
+                    stroke-width 1.5px
+                    stroke #007AFF
+                line
+                    stroke-width 2.5px
+                polygon
+                    fill #007AFF
+                    stroke-width 1px
+                    stroke #007AFF
+
+    p, a
+        margin-bottom 1.1rem
+        font-size 1.1rem
+        font-family 'Inconsolata', monospace
+        line-height 1.3
+        width calc(100% - 50px)
+        margin-left 10px
+        span
+            //background #e9e9e9
+            //padding .3rem 1rem
+            //border-radius 15px
+            display inline-block
+            svg
+                vertical-align middle
+            .spotify-logo
+                width 15px
+                margin-top -3px
+
+    .row-image
+        margin-bottom .5rem
+        display inline-flex
+        span
+            background #e9e9e9
+            padding 1rem 1rem
+            border-radius 15px
+
+        .art
+            max-width 50px
+            align-self center
+            display block
+
+
+    .align-right
+        display flex
+        justify-content flex-end
+        margin-top 1rem
+        a
+            font-family $atlas
+        p
+            span
+                float right
+                border 1px solid #AFA4A4
+                font-family $atlas
+                font-size 1rem
+                min-width 100px
+                text-align center
+                padding .5rem 1rem
+                border-radius 25px
+                border-radius 10px
+                box-shadow 0px 4px 5px rgba(0,0,0,.1)
+                box-shadow 0 16px 32px 0 rgba(102, 138, 165, 0.4)
+                a
+                    font-size 1rem
+
+
+
+
+    .options
+        flex-wrap wrap
+        justify-content flex-end
+        p, a
+            border none
+            text-decoration none
+            width 100%
+            font-size 1.1rem
+            margin-bottom .7rem
+            &:last-of-type
+                margin-right 0rem
+            span
+                //background $you-chat-color
+                cursor pointer
+                background white
+                border none
+            .selected-option
+                background-color #007AFF
+                background-color rgba(15,92,121,.13)
+                color rgb(40,40,40)
+                //border-color #007AFF
+                box-shadow none
+                cursor initial
+                pointer-events none
+    .fmk
+        display flex
+        justify-content flex-end
+        margin-bottom 1rem
+        flex-wrap nowrap
+        .col
+            margin-left 1rem
+            display flex
+            flex-direction column
+            .artist-name
+                text-align center
+                font-size .8rem
+                margin 0
+                width 100%
+                margin-top 5px
+                font-family $atlas
+                margin-bottom 10px
+            .fmk-options
+                display flex
+                justify-content center
+                .fmk-option
+                    text-align center
+                    margin 0
+                    width auto
+                    font-family $atlas
+                    span
+                        cursor pointer
+                        min-width auto
+                    .fmk-option-active
+                        background #aaa
+            .fmk-options-wide
+                flex-wrap wrap
+                display block
+
+                .fmk-option-wide
+
+
+                    justify-content center
+                    margin-bottom 5px
+                    display flex
+                    width 100%
+                    span
+                        display block
+                        margin 0 auto
+
+        img
+            max-width 100px
+            width 100px
+            height 100px
+            align-self center
+            object-fit cover
+            @media (max-width 375px)
+              width 75px
+              height 75px
+
+
+
+
+
+.label
+    font-size 18px
+    font-weight 600
+
+
+.cover-wrapper, .cover-score
+    display flex
+    transform translate3d(0,0,0)
+    height 100%
+    position fixed
+    z-index 100000
+    pointer-events none
+
+    //transition transform 12s
+    .cover
+        margin-right 50px
+        // transform translate3d(0, 0, -137.77987273155787px) rotateY(10.185010605703512deg)
+        align-self flex-end
+        margin-bottom 26px
+        position relative
+        //box-shadow 0px 0px 10px rgba(0,0,0,0.3)
+        &:after
+            background url('assets/images/shelf-2.png')
+            content ''
+            position absolute
+            display none
+            left 50%
+            width 300%
+            height 300%
+            top 0
+            transform translate(-50%,-41px)
+            z-index -1
+            background-size contain
+            background-repeat no-repeat
+        .cover-img
+            transform perspective(1090px) rotateX(10deg)
+            z-index -1
+            width 100%
+            height 100%
+            img
+                filter saturate(0.9)
+            .img-fake
+                position absolute
+                z-index -1
+                top 0
+                left 0
+                width calc(100% + 2px)
+                transform translate(-1px, 0) scaleY(0.99)
+                filter brightness(0.94) blur(0.2px) saturate(0.9)
+            .plastic
+                position absolute
+                top 0
+                left 0
+                content ''
+                width calc(100% + 2px)
+                height calc(100% - 1px)
+                background url('assets/images/plastic-small.jpg')
+                background-size contain
+                mix-blend-mode screen
+                opacity 1
+                z-index 100000
+
+                mix-blend-mode difference
+                opacity .3
+
+
+        .shelf
+            background url('assets/images/shelf-3.png')
+            width 155px
+            height 10px
+            background-size contain
+            background-repeat no-repeat
+            height 17px
+            position absolute
+            bottom 0
+            transform translate(-8px,11px)
+            z-index 100
+            transform translate(calc((100% + 15px) * -0.0516129032),calc(65%))
+            height calc((100% + 15px) * 0.109677419)
+            width calc(100% + 15px)
+            &:after
+                content ''
+                background linear-gradient(120deg, rgba(255,255,255,0) 42%, rgba(0,0,0,0.15) 45%, rgba(0,0,0,0.35) 65%), linear-gradient(20deg, rgba(255,255,255,0) 38%, rgba(0,0,0,0.25) 45%, rgba(0,0,0,0.23) 55%, rgba(0,0,0,0.13) 75%), radial-gradient(ellipse at 50% 100%, rgba(0,0,0,0.15) 3%, rgba(255,255,255,0) 40%)
+                width 100%
+                height 100%
+                background-repeat no-repeat
+                position absolute
+                bottom 9px
+                left 0
+                transform translate(0,100%) scaleY(-0.5) scaleX(0.85)
+                background rgba(0,0,0,.5)
+                filter blur(6px)
+        .shelf-shadow
+            width 151px
+            height 13px
+            position absolute
+            right 0
+            margin 0 auto
+            left 0
+            bottom -1px
+            z-index -1
+            transform translate(-6px,0px)
+            display none
+
+
+
+        img
+            width 100%
+            height 100%
+            object-fit cover
+
+.cover-score-wrapper
+  max-width 100%
+  width 100%
+  overflow hidden
+  position absolute
+  pointer-events none
+  top 0
+  left 0
+  height 250px
+.cover-score
+    justify-content flex-start
+    height 150px
+    top 15px
+    position absolute
+    left -35px
+
+.data-output
+    position absolute
+    bottom 0rem
+    //right 1rem
+    height 160px
+    width 100%
+
+    flex-grow 1
+    overflow hidden
+    background linear-gradient(180deg, rgba(255,255,255,0.1) 0%, #f7fdff 10%, #f7f1f1 100%)
+
+    .data-label
+        font-weight 600
+        color black
+        margin-top 1.5rem
+    p
+        color #999
+        text-align right
+        font-size 14px
+
+.login-slide
+    display flex
+    flex-direction column
+    justify-content flex-end
+
+    @media (max-width 450px)
+      justify-content flex-start
+
+    .bylines
+      //background #f1f1f1
+      padding-left 1rem
+      padding-right 1rem
+      display flex
+      justify-content space-between
+      padding-bottom .5rem
+      position absolute
+      bottom 0
+      width 100%
+      left 0
+      right 0
+      z-index 100000000
+      .privacy-names
+        .names
+          font-family 'Inconsolata', monospace
+          align-self center
+          font-size .95rem
+          @media (max-width: 900px)
+            line-height 1.2
+            text-align right
+            max-width 400px
+          @media (max-width: 750px)
+            max-width 320px
+          @media (max-width: 350px)
+            font-size .85rem
+        .privacy-q
+          font-family 'Inconsolata', monospace
+          font-size .95rem
+          align-self center
+          line-height 1.2
+          a
+            cursor pointer
+          @media (max-width 450px)
+            text-align right
+            margin-top 10px
+            font-size .90rem
+          @media (max-width: 370px)
+            font-size .85rem
+
+
+      .logo
+        font-family 'Recoleta-Regular',sans-serif
+        display flex
+        @media (max-width: 750px)
+          display block
+          margin-right 10px
+          align-self flex-end
+        span
+          align-self center
+          margin-right 10px
+          @media (max-width: 750px)
+            line-height 1.3
+            text-align left
+            margin-right 10px
+            font-size 14px
+            display block
+        a
+          border none
+          font-size 1.8rem
+          display flex
+          @media (max-width: 750px)
+            line-height 1
+            text-align left
+            margin-right 10px
+          #wordmark
+            width 135px
+            height 36px
+            vertical-align center
+            @media (max-width: 370px)
+              width 125px
+
+
+
+
+    .bg-shelf-wrapper
+      position relative
+      width 100%
+      max-height 400px
+      flex-grow 1
+      padding-bottom 1.5rem
+      @media (max-width: 450px)
+        padding-bottom 6.5rem
+      .bg-shelf
+        background url('assets/images/shelf-9.png')
+        width 100%
+        height 100%
+        background-size contain
+        background-repeat no-repeat
+        position absolute
+        background-position 50% 50%
+        z-index 1000000
+        left 0
+        right 0
+        top 50%
+        transform translate(0,-50%)
+        margin 0 auto
+        max-width 1000px
+        max-height 340px
+        @media (max-width: 450px)
+          background-size cover
+          background-position 10% 100%
+          max-height 200px
+        @media (max-width: 375px)
+          @media (max-height: 620px)
+            top 0
+            transform translate(0,0)
+
+        @media (max-width: 350px)
+          max-height 200px
+          top 0
+          transform translate(0,0)
+        @media (max-height: 350px)
+          max-height 200px
+          top 0
+          transform translate(0,0)
+        img
+          height 100%
+          min-width 1000px
+          object-fit cover
+          display none
+      .gray-gradient
+          height 100vh
+          width 100%
+          background linear-gradient(0deg, #f4f4f4 60%, rgba(248,253,255,0) 70%)
+          position absolute
+          bottom 0
+          left 0
+          right 0
+          margin 0 auto
+          z-index -1
+
+
+
+
+
+    .hed
+        font-family 'Recoleta-Regular'
+        text-align center
+        font-size 4rem
+        line-height 1.2
+        margin 0 auto
+
+        margin-bottom 2rem
+        max-width 700px
+        width calc(100% - 40px)
+        margin-top 1rem
+        @media (max-width: 1000px)
+          font-size 3.6rem
+          max-width 600px
+          margin-bottom 1rem
+        @media (max-width: 500px)
+          font-size 2.8rem
+          margin-top 2rem
+          margin-bottom 1rem
+
+        @media (max-width: 400px)
+          font-size 2.2rem
+          margin-top 2rem
+    .dek
+        font-family 'Inconsolata', monospace
+        text-align center
+        max-width 400px
+        width calc(100% - 40px)
+        font-size 1.4rem
+        margin 0 auto
+        margin-bottom 1rem
+        @media (max-width: 500px)
+          font-size 1.4rem
+          margin-top 1rem
+          line-height 1.3
+        @media (max-width: 400px)
+          font-size 1.1rem
+          margin-top 1rem
+
+    .logging-in
+        margin 0 auto
+        font-family 'Recoleta-Regular'
+        text-align center
+        position relative
+        z-index 10000000000
+        .button-main
+            padding .7rem 1.5rem
+            background black
+            box-shadow 0 8px 32px 0 rgba(0, 0, 0, 0.35)
+            border-radius 10px
+            font-weight 500
+            color white
+            font-family 'Recoleta-Regular'
+            margin 1rem
+            font-size 1.3rem
+        .button-sub
+            font-size 1rem
+            margin-bottom 1rem
+        a
+            margin 0 auto
+            background #C8C8C8
+            padding .5rem 1rem
+            text-align center
+            border none
+            border-radius 25px
+            font-family 'Recoleta-Regular'
+.loading-slide
+    //overflow hidden
+    height 100%
+    display flex
+    flex-direction column
+    justify-content flex-start
+
+.loading-section
+    display flex
+    flex-direction column
+    justify-content flex-end
+    height 50%
+    font-family $atlas
+    width calc(100% - 100px)
+    overflow scroll
+    position absolute
+    top 50%
+    left 100px
+    transform translate(0,-50%)
+
+.swiper-container
+    width 100%
+    height 100%
+    .swiper-slide
+        height 100%
+
+.results
+    display none
+
+.wrapper
+    margin-bottom 2rem
+    .column-label
+        font-weight 500
+    .artists, .tracks
+        display flex
+        p
+            font-size 14px
+            line-height 1.2
+            margin-bottom .5rem
+    .tracks
+        p
+            span
+                display block
+                font-size 12px
+                margin-top 2px
+
+
+
+
+
+
+
+ #loader circle:nth-of-type(1) {
+	 opacity: 0.5;
+	 animation: fade 0.7s cubic-bezier(0.39, 0.58, 0.57, 1) 0s infinite alternate-reverse;
+}
+ #loader circle:nth-of-type(2) {
+	 opacity: 0.5;
+	 animation: fade 0.7s cubic-bezier(0.39, 0.58, 0.57, 1) 0.4s infinite alternate-reverse;
+}
+ #loader circle:nth-of-type(3) {
+	 opacity: 0.5;
+	 animation: fade 0.7s cubic-bezier(0.39, 0.58, 0.57, 1) 0.8s infinite alternate-reverse;
+}
+ #loader circle:nth-of-type(4) {
+	 animation: expandBigger 0.5s infinite alternate 0.4s;
+}
+ #loader circle:nth-of-type(5) {
+	 animation: expandTiny 0.5s infinite alternate;
+}
+ #loader path {
+	 animation: expandBiggest 1s linear infinite alternate;
+}
+ @keyframes fade {
+	 from {
+		 opacity: 1;
+	}
+	 to {
+		 opacity: 0.7;
+	}
+}
+ @keyframes expandTiny {
+	 from {
+		 transform: scale(1);
+	}
+	 to {
+		 transform: translate(4.1px, -7.48px) scale(1.1);
+	}
+}
+ @keyframes expandBigger {
+	 from {
+		 transform: scale(1);
+	}
+	 to {
+		 transform: translate(2.52px, -6.26px) scale(1.1);
+	}
+}
+ @keyframes expandBiggest {
+	 from {
+		 transform: scale(1);
+	}
+	 to {
+		 transform: translate(-0.525px, -0.9487500191px) scale(1.025);
+	}
+}
+
+.swiper-container-2
+    height 50vh
+    .swiper-slide
+        width auto
+        padding-top 3rem
+        height 100px
+        display flex
+        flex-direction column
+        justify-content center
+        opacity 0
+.swiper-container
+    .score-slide
+        font-family $atlas
+        overflow scroll
+.gradient-wrapper
+    position fixed
+    pointer-events none
+    z-index 0
+    top 0
+    left 0
+    width 100vw
+    height 100%
+    .gradient-overlay
+        height 100%
+        width 100%
+        backdrop-filter saturate(200%) blur(20px)
+        background-color hsla(0, 0%, 100%, 0.97)
+        z-index 10000
+    .gradient
+        height 100%
+        width 100%
+        position absolute
+        top 0
+        left 0
+        z-index -1
+        svg
+            height 100%
+            width 100%
+            z-index -1
+            position relative
+
+
+footer
+  display none
+.data-modal
+  width 100%
+  height 100%
+  display none
+  background white
+  z-index 10000000000
+  position fixed
+  top 0
+  left 0
+  .data-modal-container
+    max-width 550px
+    margin 0 auto
+    width calc(100% - 40px)
+    margin-top 2rem
+    button
+      padding .5rem 1rem
+      border-radius 4px
+      margin-bottom 1rem
+      background black
+      color white
+    p
+      font-family $atlas
+      margin-bottom 1rem
+      font-size 1rem
+.visible
+  display block

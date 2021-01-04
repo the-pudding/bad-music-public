@@ -1,0 +1,174 @@
+<div class='intro'>
+    <div class="cover-wrapper"></div>
+    <div class="cover-score-wrapper">
+      <div class="cover-score">
+      </div>
+    </div>
+
+
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+
+            <div class="swiper-slide login-slide">
+                <div class="title-wrapper">
+                    <h1 class="hed">How Bad Is Your Spotify?</h1>
+                    <p class="dek">Our sophisticated A.I. judges your awful taste in music.</p>
+                </div>
+                <div class="logging-in">
+                    <button class="button-main">Find Out</button>
+                </div>
+                <div class="bg-shelf-wrapper">
+
+                  <div class="bg-shelf">
+                    <img src="assets/images/shelf-5.png" alt="">
+                  </div>
+                  <div class="gray-gradient">
+
+                  </div>
+                </div>
+                <div class="bylines">
+                  <p class="logo"> <span>A project by</span> <a alt="The Pudding" href="https://pudding.cool"><img alt='The Pudding' inline src='pudding/wordmark.svg'></a></p>
+                  <div class="privacy-names">
+                    <p class="names">A.I. trained by <a href="https://pudding.cool/author/mike-lacher/">Mike Lacher</a> & <a href="https://pudding.cool/author/matt-daniels/">Matt Daniels</a></p>
+                    <p class="privacy-q">Data questions? Answers and privacy policy <a class="data-privacy">here</a>.</p>
+                  </div>
+
+
+                </div>
+            </div>
+
+            <div class="swiper-slide ai-building-slide">
+                <div class="title-wrapper ai-building-slide-title #test">
+                </div>
+
+                <div class="swiper-container-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="fantano" src="assets/images/fantano_2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="pitchfork" src="assets/images/pitchfork_2.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="pigeons" src="assets/images/pigeons.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="tiny" src="assets/images/tiny.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="vegan" src="assets/images/vegan.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="thirty" src="assets/images/33.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="stereo" src="assets/images/stereo.png" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="swiper-slide loading-slide">
+                <div class="score-section">
+                    <div class="score-wrapper">
+                        <p>Score:</p>
+                        <p class="score-num"></p>
+                        <p class="score-text"><span>Awaiting Data</span></p>
+                    </div>
+
+                </div>
+                <div class="chat-section">
+                    <div class="chat-wrapper">
+                    </div>
+                </div>
+                <div class="data-output">
+                </div>
+            </div>
+
+            <div class="swiper-slide score-slide">
+
+                <div class="score-chat">
+                    <div class="score-chat-special"></div>
+
+                    {{!-- <div class="score-title">
+                        <p>How bad is your Spotify?</p>
+                        <p>My neural net has decided that it’s</p>
+                        <div class="final-score"></div>
+                    </div>
+
+                    <p class="">Why?</p>
+                    <div class="insults"></div> --}}
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="score-slide">
+        <div class="score-chat">
+            <div class="score-chat-special"></div>
+
+        {{!-- <div class="score-title">
+        <p>How bad is your Spotify?</p>
+        <p>My neural net has decided that it’s</p>
+        <div class="final-score"></div>
+        </div>
+
+        <p class="">Why?</p>
+        <div class="insults"></div> --}}
+
+        </div>
+        <div class="ascii-art">
+            <!-- <pre>
+____                 _   ____        _
+|  _ \ ___   __ _ ___| |_| __ )  ___ | |_
+| |_) / _ \ / _` / __| __|  _ \ / _ \| __|
+|  _ < (_) | (_| \__ \ |_| |_) | (_) | |_
+|_| \_\___/ \__,_|___/\__|____/ \___/ \__|
+
+            </pre> -->
+        </div>
+        <div class="footer">
+          {{> base/footer }}
+        </div>
+
+    </div>
+
+    <div class="gradient-wrapper">
+        <div class="gradient-overlay">
+
+        </div>
+        <div class="gradient">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1024" fill="none">
+                <circle cx="588" cy="579" r="677" fill="url(#paint0_linear)"/>
+                <circle cx="1349" cy="1189" r="677" fill="#FC7E37"/>
+                <circle cx="1658" cy="-104" r="677" fill="#E48586"/>
+                <circle cx="-164" cy="-136" r="677" fill="#764FFB"/>
+                <defs>
+                <linearGradient id="paint0_linear" x1="588" y1="-98" x2="588" y2="1256" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#62BCFF"/>
+                <stop offset="1" stop-color="#1A9CFC"/>
+                </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </div>
+    <div class="data-modal">
+      <div class="data-modal-container">
+        <button type="button" name="close-button">Close</button>
+        <p>This project does not save any Spotify data. When you log-in with Spotify, it creates a special, one-time code to read your top songs and tracks, as well as recent playlists. That access goes away until you come back.</p>
+        <p>To remove ties between your Spotify account and this project, click remove access for “Bad Music” on Spotify’s 3rd Party app page <a href="https://www.spotify.com/account/apps/">here</a>.</p>
+        <p>You can also find our site-wide privacy policy <a href="https://pudding.cool/privacy/">here</a>.</p>
+      </div>
+    </div>
+
+
+
+
+
+</div>
